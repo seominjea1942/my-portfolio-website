@@ -1,10 +1,12 @@
 import React from 'react';
 import Pimage from './sub/PImage'
-import Pdescription from './Pdescription'
-function PortfolioBox(props) {
+import Pdescription from './sub/Pdescription'
+function PortfolioBox({startPoint, endPoint}) {
     return (
         <div className='gridContainer'>
-            <div className='test'>
+            <div style={{
+                gridColumn: `${startPoint} / span ${endPoint}`
+            }} className='portfolioBox'>
                 <Pimage></Pimage>
                 <Pdescription></Pdescription>
             </div>

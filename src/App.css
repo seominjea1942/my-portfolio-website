@@ -19,6 +19,7 @@ p{
   color: var(--yellowishWhite);
   font-family: 'Roboto', sans-serif;
 }
+
 body{
   background-color:var(--bluishBlack);
 }
@@ -94,18 +95,27 @@ body{
 
 .portfolioHeader h1{
   font-size: 4rem;
+  margin-bottom: 3rem;
 }
 
 .splitterLine{
   background-color: var(--yellowishWhite);
-  height:2px;
+  height:4px;
   width: 8rem;
   margin-top:5rem;
   margin-bottom:5rem;
 }
-.test{
+.portfolioBox{
   grid-column: 4/ span last-column;
+  margin-bottom: 10rem;
 }
 .pdescription{
   grid-column: 1/ span 3;
+}
+.portfolioFourInRowBox{
+  display:grid;
+  grid-template-rows: auto; 
+  grid-template-columns: repeat(4,1fr)[last-column];
+  grid-gap:16px;
+  margin-bottom: 30rem;
 }
