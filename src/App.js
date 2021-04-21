@@ -1,10 +1,12 @@
+import "tailwindcss/tailwind.css"
 import './App.css';
 import Header from './components/Header'
 function App() {
   return (
     <div className="App">
-      <div className="gridContainer">
       <Header></Header>
+      <div className="gridContainer">
+      <div>1</div>
       <div>2</div>
       <div>3</div>
       <div>4</div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function HeaderNavigationHelper(props) {
     return (
-        <div>
+        <div className="headerNavigationHelper">
             <p>NavigationHelper</p>
         </div>
     );

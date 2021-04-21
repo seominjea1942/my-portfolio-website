@@ -1,6 +1,8 @@
+
 :root{
-  --bluisghBlack: #1D2026;
+  --bluishBlack: #1D2026;
   --yellowishWhite: #FFF4E8;
+  --mobileHeaderBg: #272B33;
 }
 *{
   margin:0;
@@ -9,7 +11,7 @@
   color: var(--yellowishWhite);
 }
 body{
-  background-color:var(--bluisghBlack);
+  background-color:var(--bluishBlack);
 }
 
 .gridContainer{
@@ -20,15 +22,55 @@ body{
 }
 
 .header{
-  background-color: black;
-  grid-row: 1 / last-line;
-  grid-column: 1 / 1;
+  position:fixed;
+  background-color: var(--bluishBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  height: 100vh;
+  padding: 2rem 0;
+}
+.logoAndMenuIcon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageTitle{
+  display:none;
+}
+@media only screen and (max-width: 480px){
+  .header{
+    background-color: var(--mobileHeaderBg);
+    width:100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 20px;
+  }
+  .logoAndMenuIcon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headerNavigationHelper{
+    display: none;
+  }
+  .pageTitle{
+    display:block;
+  }
 }
 
 .gridContainer>* {
   border: 2px solid white;
   
 }
-#Layer_1{
-  fill: var(--yellowishWhite)
+#logo{
+  fill: var(--yellowishWhite);
+  width:45px;
+  margin-left: 2px;
 }
