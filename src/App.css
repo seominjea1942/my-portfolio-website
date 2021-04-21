@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
 
 :root{
   --bluishBlack: #1D2026;
   --yellowishWhite: #FFF4E8;
   --mobileHeaderBg: #272B33;
 }
+
+.portfolioHeader h1 {
+  font-family: 'Poppins', sans-serif;
+}
+p{
+  line-height: 175%;
+}
 *{
   margin:0;
   box-sizing: border-box;
   font-size: 16px;
   color: var(--yellowishWhite);
+  font-family: 'Roboto', sans-serif;
 }
 body{
   background-color:var(--bluishBlack);
@@ -16,8 +25,8 @@ body{
 
 .gridContainer{
   display:grid;
-  grid-template-rows: auto [last-line]; 
-  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: auto; 
+  grid-template-columns: repeat(9,1fr)[last-column];
   grid-gap:16px;
 }
 
@@ -66,11 +75,37 @@ body{
 }
 
 .gridContainer>* {
-  border: 2px solid white;
+  border: 1px dotted yellow;
   
 }
 #logo{
   fill: var(--yellowishWhite);
   width:45px;
   margin-left: 2px;
+}
+.pImage{
+  background-color: gray;
+  height: 400px;
+}
+
+.portfolioHeader{
+  grid-column: 4/ 7;
+}
+
+.portfolioHeader h1{
+  font-size: 4rem;
+}
+
+.splitterLine{
+  background-color: var(--yellowishWhite);
+  height:2px;
+  width: 8rem;
+  margin-top:5rem;
+  margin-bottom:5rem;
+}
+.test{
+  grid-column: 4/ span last-column;
+}
+.pdescription{
+  grid-column: 1/ span 3;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderNavigationHelper from './HeaderNavigationHelper'
+import HeaderNavigationHelper from './sub/HeaderNavigationHelper'
 import PageTitle from './PageTitle'
 import { Spin as Hamburger } from 'hamburger-react'
 import Logo from '../imageSource/Logo'
