@@ -8,6 +8,7 @@
 
 .portfolioHeader h1 {
   font-family: 'Poppins', sans-serif;
+  margin-top: 6rem;
 }
 p{
   line-height: 175%;
@@ -40,6 +41,7 @@ body{
   align-items:center;
   height: 100vh;
   padding: 2rem 0;
+  top:0;
 }
 .logoAndMenuIcon{
   display: flex;
@@ -117,5 +119,26 @@ body{
   grid-template-rows: auto; 
   grid-template-columns: repeat(4,1fr)[last-column];
   grid-gap:16px;
-  margin-bottom: 30rem;
+  margin-bottom: 24rem;
+}
+
+#pfReel{
+  width: 1280px;
+  height:780px;
+  background-color: darkgray;
+}
+
+#toggleAnimation{
+  display:flex;
+}
+
+#toggleAnimation h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.slash{
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 2rem;
 }
