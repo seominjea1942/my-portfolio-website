@@ -22,6 +22,7 @@ p{
   font-size: 18px;
   color: var(--yellowishWhite);
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -74,12 +75,21 @@ body{
 .headerNavigationHelper{
   display: flex;
   width: 45px;
+  flex-direction: column;
   justify-content: center;
+  align-items:center;
 }
 .headerNavigationHelper p{
   font-size: 14px;
+  text-align: center;
+  margin:1.5rem 0;
+  font-weight: 700;
+  
 }
-
+.arrowIcon{
+  width: 25px;
+  cursor: pointer;
+}
 @media only screen and (max-width: 480px){
   .header{
     background-color: var(--mobileHeaderBg);
