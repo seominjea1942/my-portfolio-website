@@ -5,18 +5,21 @@
   --yellowishWhite: #FFF4E8;
   --mobileHeaderBg: #272B33;
 }
+.portfolioHeader h1, #toggleAnimation h1, .menuItem h1{
+  font-family: 'Poppins', sans-serif;
+}
 
 .portfolioHeader h1 {
-  font-family: 'Poppins', sans-serif;
   margin-top: 6rem;
 }
+
 p{
   line-height: 175%;
 }
 *{
   margin:0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--yellowishWhite);
   font-family: 'Roboto', sans-serif;
 }
@@ -32,16 +35,33 @@ body{
   grid-gap:16px;
 }
 
-.header{
+.headerAndMenu{
   position:fixed;
-  background-color: var(--bluishBlack);
+  top:0;
+  height:100vh;
+  display: flex;
+}
+
+.menu{
+  display:none;
+}
+.menuActive{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header{
+  /* background-color: var(--bluishBlack); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items:center;
   height: 100vh;
-  padding: 2rem 0;
-  top:0;
+  padding: 2rem 2rem;
+  width:fit-content;
 }
 .logoAndMenuIcon{
   display: flex;
@@ -51,6 +71,15 @@ body{
 .pageTitle{
   display:none;
 }
+.headerNavigationHelper{
+  display: flex;
+  width: 45px;
+  justify-content: center;
+}
+.headerNavigationHelper p{
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 480px){
   .header{
     background-color: var(--mobileHeaderBg);
@@ -76,7 +105,6 @@ body{
     display:block;
   }
 }
-
 .gridContainer>* {
   border: 1px dotted yellow;
   
@@ -123,7 +151,7 @@ body{
 }
 
 #pfReel{
-  width: 1280px;
+  width: auto;
   height:780px;
   background-color: darkgray;
 }
@@ -133,7 +161,6 @@ body{
 }
 
 #toggleAnimation h1{
-  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -141,4 +168,15 @@ body{
 .slash{
   margin: 0 0.5rem 0 0.5rem;
   font-size: 2rem;
+}
+.menuItem{
+  margin: 0 2rem;
+}
+.menuItem h1{
+  font-size: 3rem;
+  color: var(--bluishBlack);
+}
+.menuItem p{
+  font-size: 1.25rem;
+  color: var(--bluishBlack);
 }
